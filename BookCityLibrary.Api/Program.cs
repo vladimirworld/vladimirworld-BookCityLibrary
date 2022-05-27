@@ -1,8 +1,6 @@
 using BookCityLibrary.Api.Extensions;
 using BookCityLibrary.Api.Infrastructure;
 using BookCityLibrary.Repository.Data;
-using BookCityLibrary.Repository.DataAccess;
-using BookLibrary.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,16 +9,22 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddSwaggerDocumentation();
-//builder.Services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new() { Title = "BookCityLibrary.Api", Version = "v1" }); });
 builder.Services.AddInfrastructure();
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("CorsPolicy",
+        conf =>
+            conf.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+});
 
 var app = builder.Build();
-
 
 using (var scope = app.Services.CreateScope())
 {
     var scopedService = scope.ServiceProvider;
-    
+
     try
     {
         var dbContext = scopedService.GetRequiredService<ApplicationDbContext>();
@@ -34,9 +38,6 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-
-
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -45,6 +46,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("CorsPolicy");
 app.UseRouting();
 app.UseSwaggerDocumentation();
 app.UseStaticFiles();

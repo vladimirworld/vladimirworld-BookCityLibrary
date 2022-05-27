@@ -1,6 +1,15 @@
-﻿namespace BookCityLibrary.Repository.Data;
+﻿using BookLibrary.Data.Interfaces;
 
-public class UnitOfWork
+namespace BookCityLibrary.Repository.Data;
+
+public class UnitOfWork : IUnitOfWork
 {
-    
+    public UnitOfWork(IBookRepository bookRepo, IAuthorRepository authRepo)
+    {
+        BookRepository = bookRepo;
+        AuthorRepository = authRepo;
+    }
+
+    public IBookRepository BookRepository { get; private set; }
+    public IAuthorRepository AuthorRepository { get; private set; }
 }

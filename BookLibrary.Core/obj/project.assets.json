@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repo\\imd\\vladimirworld-BookCityLibrary\\BookLibrary.Data\\BookLibrary.Data.csproj",
-      "projectName": "BookLibrary.Data",
-      "projectPath": "C:\\repo\\imd\\vladimirworld-BookCityLibrary\\BookLibrary.Data\\BookLibrary.Data.csproj",
+      "projectUniqueName": "C:\\repo\\imd\\vladimirworld-BookCityLibrary\\BookLibrary.Core\\BookLibrary.Core.csproj",
+      "projectName": "BookLibrary.Core",
+      "projectPath": "C:\\repo\\imd\\vladimirworld-BookCityLibrary\\BookLibrary.Core\\BookLibrary.Core.csproj",
       "packagesPath": "C:\\Users\\Boris\\.nuget\\packages\\",
-      "outputPath": "C:\\repo\\imd\\vladimirworld-BookCityLibrary\\BookLibrary.Data\\obj\\",
+      "outputPath": "C:\\repo\\imd\\vladimirworld-BookCityLibrary\\BookLibrary.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Boris\\AppData\\Roaming\\NuGet\\NuGet.Config",

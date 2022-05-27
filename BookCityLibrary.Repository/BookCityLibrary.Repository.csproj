@@ -6,4 +6,16 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\BookLibrary.Core\BookLibrary.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dapper" Version="2.0.123" />
+      <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.0-preview.4.22229.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0-preview.4.22229.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.0-preview.4.22229.2" />
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0-preview.4.22229.4" />
+    </ItemGroup>
+
 </Project>

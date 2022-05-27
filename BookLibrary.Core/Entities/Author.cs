@@ -18,5 +18,5 @@ public class Author : BaseEntity
 
     public string Bio { get; set; }
 
-    public IList<Book> Books { get; set; }
+    public IList<Book>? Books { get; set; }
 }

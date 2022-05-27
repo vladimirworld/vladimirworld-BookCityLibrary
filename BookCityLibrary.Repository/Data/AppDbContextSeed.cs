@@ -44,7 +44,8 @@ public static class AppDbContextSeed
                     Year = 2018,
                     Summary = "A particle guide on the ASP.Net Core framework.",
                     Isbn = "978-1617294617",
-                    Price = 44.99m
+                    Price = 44.99m,
+                    Image = "empty"
                 },
                 new()
                 {
@@ -54,7 +55,8 @@ public static class AppDbContextSeed
                     Summary =
                         "This teaches you how to access and update relational data from .NET applications. Following the crystal-clear explanations, real-world examples, and around 100 diagrams, you’ll discover time-saving patterns and best practices for security, performance tuning, and unit testing.",
                     Isbn = "978-1617294563",
-                    Price = 39.70m
+                    Price = 39.70m,
+                    Image = "empty"
                 },
                 new()
                 {
@@ -64,7 +66,8 @@ public static class AppDbContextSeed
                     Summary =
                         "Now in its 8th edition, the comprehensive book you need to learn ASP.NET Core development!",
                     Isbn = "978-1484254394",
-                    Price = 34.99m
+                    Price = 34.99m,
+                    Image = "empty"
                 },
                 new()
                 {
@@ -74,7 +77,8 @@ public static class AppDbContextSeed
                     Summary =
                         "Use this book to build dynamic JavaScript applications using the popular React library.",
                     Isbn = "978-1484244500",
-                    Price = 35.97m
+                    Price = 35.97m,
+                    Image = "empty"
                 }
             };
 

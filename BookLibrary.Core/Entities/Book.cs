@@ -13,13 +13,13 @@ public class Book : BaseEntity
 
     public string Summary { get; set; }
 
-    public string Isbn { get; set; }
+    public string? Isbn { get; set; }
 
-    public string Image { get; set; }
+    public string? Image { get; set; }
 
     public decimal? Price { get; set; }
 
-    public int AuthorId { get; set; }
+    public int? AuthorId { get; set; }
 
-    public Author Author { get; set; }
+    public Author? Author { get; set; }
 }

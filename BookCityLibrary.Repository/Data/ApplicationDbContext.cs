@@ -10,17 +10,14 @@ public sealed class ApplicationDbContext : DbContext
 {
     private readonly IConfiguration _config;
 
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IConfiguration config,
-        DbSet<Book> books, DbSet<Author> authors) : base(options)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IConfiguration config) : base(options)
     {
         _config = config;
-        Books = books;
-        Authors = authors;
         Database.EnsureCreated();
     }
 
-    public DbSet<Book> Books { get; }
-    public DbSet<Author> Authors { get; }
+    public DbSet<Book> Books { get; set; }
+    public DbSet<Author> Authors { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

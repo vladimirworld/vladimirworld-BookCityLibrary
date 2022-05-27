@@ -1,7 +1,7 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
+using BookCityLibrary.Api.Extensions;
+using BookCityLibrary.Api.Infrastructure;
+using BookCityLibrary.Repository.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,8 +9,27 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new() { Title = "BookCityLibrary.Api", Version = "v1" }); });
+builder.Services.AddInfrastructure();
+builder.Services.AddSwaggerDocumentation();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    try
+    {
+        var dbContext = services.GetRequiredService<ApplicationDbContext>();
+        await dbContext.Database.MigrateAsync();
+        await AppDbContextSeed.SeedAsync(dbContext);
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e);
+        throw;
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -20,9 +39,13 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
+app.UseRouting();
+app.UseSwaggerDocumentation();
+app.UseStaticFiles();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+    endpoints.MapFallbackToFile("index.html");
+});
 
 app.Run();

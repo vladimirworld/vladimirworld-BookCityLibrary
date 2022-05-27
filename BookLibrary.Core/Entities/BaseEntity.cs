@@ -6,6 +6,5 @@ namespace BookLibrary.Data.Entities;
 [ExcludeFromCodeCoverage]
 public class BaseEntity
 {
-    [Key]
-    public int Id { get; set; }
+    [Key] public int Id { get; set; }
 }

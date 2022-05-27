@@ -1356,6 +1356,7 @@
     "net6.0": [
       "BookCityLibrary.Repository >= 1.0.0",
       "BookLibrary.Core >= 1.0.0",
+      "Microsoft.Extensions.DependencyInjection >= 7.0.0-preview.4.22229.4",
       "Swashbuckle.AspNetCore >= 6.1.5"
     ]
   },
@@ -1405,6 +1406,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[7.0.0-preview.4.22229.4, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.1.5, )"

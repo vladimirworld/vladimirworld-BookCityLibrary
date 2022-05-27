@@ -1,6 +1,9 @@
-﻿namespace BookCityLibrary.Api.Controllers;
+﻿using Microsoft.AspNetCore.Mvc;
 
-public class BaseApiController
+namespace BookCityLibrary.Api.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+public class BaseApiController : ControllerBase
 {
-    
 }

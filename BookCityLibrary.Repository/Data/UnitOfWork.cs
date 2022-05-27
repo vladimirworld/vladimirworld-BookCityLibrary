@@ -10,6 +10,7 @@ public class UnitOfWork : IUnitOfWork
         AuthorRepository = authRepo;
     }
 
-    public IBookRepository BookRepository { get; private set; }
-    public IAuthorRepository AuthorRepository { get; private set; }
+    public IBookRepository BookRepository { get; }
+
+    public IAuthorRepository AuthorRepository { get; }
 }

@@ -6,54 +6,48 @@ using Microsoft.Extensions.Configuration;
 
 namespace BookCityLibrary.Repository.Data;
 
-public class ApplicationDbContext : DbContext
+public sealed class ApplicationDbContext : DbContext
 {
     private readonly IConfiguration _config;
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IConfiguration config) 
-            : base(options)
+
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IConfiguration config) : base(options)
+    {
+        _config = config;
+        Database.EnsureCreated();
+    }
+
+    public DbSet<Book> Books { get; set; }
+    public DbSet<Author> Authors { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+
+        builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+        if (Database.ProviderName != "Microsoft.EntityFrameworkCore.Sqlite") return;
+        foreach (var entityType in builder.Model.GetEntityTypes())
         {
-            _config = config;
-            Database.EnsureCreated();
-        }
+            var properties = entityType.ClrType.GetProperties().Where(p => p.PropertyType == typeof(decimal));
+            var dateTimeProperties = entityType.ClrType.GetProperties()
+                .Where(p => p.PropertyType == typeof(DateTimeOffset));
 
-        public DbSet<Book> Books { get; set; }
-        public DbSet<Author> Authors { get; set; }
-
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);
-
-            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-
-            ///<summary>
-            /// Converts decimal to double since it is not supported in SqLite 
-            /// </summary>
-            if (Database.ProviderName == "Microsoft.EntityFrameworkCore.Sqlite")
+            foreach (var property in properties)
             {
-                foreach (var entityType in builder.Model.GetEntityTypes())
-                {
-                    var properties = entityType.ClrType.GetProperties().Where(p => p.PropertyType == typeof(decimal));
-                    var dateTimeProperties = entityType.ClrType.GetProperties()
-                        .Where(p => p.PropertyType == typeof(DateTimeOffset));
+                builder.Entity(entityType.Name).Property(property.Name).HasConversion<double>();
+            }
 
-                    foreach (var property in properties)
-                    {
-                        builder.Entity(entityType.Name).Property(property.Name).HasConversion<double>();
-                    }
-
-                    foreach (var property in dateTimeProperties)
-                    {
-                        builder.Entity(entityType.Name).Property(property.Name)
-                            .HasConversion(new DateTimeOffsetToBinaryConverter());
-                    }
-                }
+            foreach (var property in dateTimeProperties)
+            {
+                builder.Entity(entityType.Name)
+                    .Property(property.Name)
+                    .HasConversion(new DateTimeOffsetToBinaryConverter());
             }
         }
+    }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            // optionsBuilder.UseNpgsql(_config.GetConnectionString("NpgsqlConString"))
-            // optionsBuilder.UseSqlServer(_config.GetConnectionString("sqlConString"));
-            optionsBuilder.UseSqlite(_config.GetConnectionString("sqlite"));
-        }
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlite(_config.GetConnectionString("sqlite") ?? string.Empty);
+    }
 }

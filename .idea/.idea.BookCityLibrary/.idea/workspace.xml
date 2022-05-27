@@ -11,52 +11,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec644fcb-8b8f-4acb-a7e2-96d45feb61ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Infrastructure/DependencyInjectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/ISqlDataAccess.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BookCityLibrary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BookCityLibrary/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/BookCityLibrary.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/BookCityLibrary.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Controllers/AuthorsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Controllers/AuthorsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Controllers/BaseApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Controllers/BaseApiController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Controllers/BooksController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Dtos/PaginationDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Dtos/PaginationDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Extensions/SwaggerServiceExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Extensions/SwaggerServiceExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Helpers/HttpExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Helpers/HttpExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Helpers/PaginationHeader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Helpers/PaginationHeader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Infrastructure/DependencyInjectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Infrastructure/DependencyInjectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/BookCityLibrary.Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/BookCityLibrary.Api.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/BookCityLibrary.Api.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/BookCityLibrary.Api.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/BookCityLibrary.Repository.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/BookCityLibrary.Repository.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/AppDbContextSeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/AppDbContextSeed.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/AuthorSqlRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/AuthorSqlRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/BookSqlRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/BookSqlRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/UnitOfWork.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/DataAccess/SqliteDataAccess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/DataAccess/SqliteDataAccess.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/BookCityLibrary.Repository.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/BookCityLibrary.Repository.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/BookCityLibrary.Repository.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/BookCityLibrary.Repository.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/Debug/net6.0/BookCityLibrary.Repository.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/Debug/net6.0/BookCityLibrary.Repository.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.UI/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.sln" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/BookLibrary.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/BookLibrary.Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/Entities/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Entities/Author.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/Entities/BaseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Entities/BaseEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/Entities/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Entities/Book.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/Interfaces/IAuthorRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IAuthorRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/Interfaces/IBaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IBaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/Interfaces/IBookRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IBookRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/Interfaces/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IUnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/obj/BookLibrary.Data.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/BookLibrary.Data.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/obj/BookLibrary.Data.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/BookLibrary.Data.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/obj/BookLibrary.Data.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/BookLibrary.Data.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/obj/Debug/net6.0/BookLibrary.Data.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Data.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/obj/Debug/net6.0/BookLibrary.Data.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Data.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/obj/Debug/net6.0/BookLibrary.Data.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Data.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/obj/Debug/net6.0/BookLibrary.Data.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Data.GlobalUsings.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/obj/Debug/net6.0/BookLibrary.Data.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Data.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Data/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/Entities/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Entities/Author.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/Entities/BaseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Entities/BaseEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/Entities/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Entities/Book.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IAuthorRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IAuthorRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IBaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IBaseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IBookRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IBookRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/ISqlDataAccess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/ISqlDataAccess.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IUnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +55,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1abb2696c3e0194fd5bb62254c37a28878e46192b53fe8ad2df3f329e6f77ee/MvcServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/75dd5dca589be48ab17bbf44c74e2c42911f9814ea4be6d21aef8163e4459659/IServiceCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BookCityLibrary.Repository/Data/AppDbContextSeed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BookCityLibrary.Repository/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
@@ -84,18 +73,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.BookCityLibrary.UI: BookCityLibrary">
     <configuration name="BookCityLibrary.Api" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/BookCityLibrary.Api/BookCityLibrary.Api.csproj" />

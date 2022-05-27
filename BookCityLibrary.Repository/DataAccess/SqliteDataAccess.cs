@@ -15,25 +15,21 @@ public class SqliteDataAccess : ISqlDataAccess
         _config = config;
     }
 
-    public async Task<List<T>> LoadData<T, U>(string sql, U parameters, string connectionStringName)
+    public async Task<List<T>> LoadData<T, TU>(string sql, TU parameters, string connectionStringName)
     {
-        using (IDbConnection connection = new SqliteConnection(_config.GetConnectionString(connectionStringName)))
-        {
-            connection.Open();
+        using IDbConnection connection = new SqliteConnection(_config.GetConnectionString(connectionStringName));
+        connection.Open();
 
-            var rows = await connection.QueryAsync<T>(sql, parameters, commandType: CommandType.Text);
+        var rows = await connection.QueryAsync<T>(sql, parameters, commandType: CommandType.Text);
 
-            return rows.ToList();
-        }
+        return rows.ToList();
     }
 
     public async Task SaveData<T>(string sql, T parameters, string connectionStringName)
     {
-        using (IDbConnection connection = new SqliteConnection(_config.GetConnectionString(connectionStringName)))
-        {
-            connection.Open();
+        using IDbConnection connection = new SqliteConnection(_config.GetConnectionString(connectionStringName));
+        connection.Open();
 
-            await connection.ExecuteAsync(sql, parameters, commandType: CommandType.Text);
-        }
+        await connection.ExecuteAsync(sql, parameters, commandType: CommandType.Text);
     }
 }

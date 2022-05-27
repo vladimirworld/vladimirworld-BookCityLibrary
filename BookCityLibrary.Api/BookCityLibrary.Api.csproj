@@ -11,7 +11,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Infrastructure" />
+      <ProjectReference Include="..\BookCityLibrary.Repository\BookCityLibrary.Repository.csproj" />
+      <ProjectReference Include="..\BookLibrary.Core\BookLibrary.Core.csproj" />
     </ItemGroup>
 
 </Project>

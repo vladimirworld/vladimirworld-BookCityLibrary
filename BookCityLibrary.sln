@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.Data", "BookLib
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCityLibrary.Api", "BookCityLibrary.Api\BookCityLibrary.Api.csproj", "{8257C385-FBEF-406C-A12A-E5A88DD28EB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCityLibrary.Repository", "BookCityLibrary.Repository\BookCityLibrary.Repository.csproj", "{BD17B9B7-37C0-45B7-B194-E725F9F4D03E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{8257C385-FBEF-406C-A12A-E5A88DD28EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8257C385-FBEF-406C-A12A-E5A88DD28EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8257C385-FBEF-406C-A12A-E5A88DD28EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD17B9B7-37C0-45B7-B194-E725F9F4D03E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD17B9B7-37C0-45B7-B194-E725F9F4D03E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD17B9B7-37C0-45B7-B194-E725F9F4D03E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD17B9B7-37C0-45B7-B194-E725F9F4D03E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

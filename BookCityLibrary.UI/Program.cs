@@ -1,12 +1,22 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using Blazored.LocalStorage;
+using Blazored.Toast;
+using BookCityLibrary.UI.Contracts;
+using BookCityLibrary.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddHttpClient();
+builder.Services.AddTransient<ApiService>();
+builder.Services.AddBlazoredLocalStorage();
+
+builder.Services.AddBlazoredToast();
+builder.Services.AddScoped(typeof(IRepositoryService<>), typeof(RepositoryService<>));
+builder.Services.AddScoped<IAuthorRepository, AuthorService>();
+builder.Services.AddScoped<IBookRepository, BookService>();
+builder.Services.AddOptions();
 
 var app = builder.Build();
 

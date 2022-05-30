@@ -6,8 +6,8 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = BookCityLibrary
-build_property.RootNamespace = BookCityLibrary
+build_property.RootNamespace = BookCityLibrary.UI
+build_property.RootNamespace = BookCityLibrary.UI
 build_property.ProjectDir = C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\
 build_property.RazorLangVersion = 6.0
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
@@ -18,38 +18,82 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Components/SearchComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWFyY2hDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Authors/AuthorCreate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yc1xBdXRob3JDcmVhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Authors/AuthorDelete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yc1xBdXRob3JEZWxldGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Authors/AuthorDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yc1xBdXRob3JEZXRhaWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Authors/AuthorList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yc1xBdXRob3JMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Authors/AuthorListBaseComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yc1xBdXRob3JMaXN0QmFzZUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Authors/AuthorUpdate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yc1xBdXRob3JVcGRhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Books/BookCreate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcQm9va0NyZWF0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Books/BookDelete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcQm9va0RlbGV0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Books/BookDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcQm9va0RldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Books/BookList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcQm9va0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Books/BookListBaseComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcQm9va0xpc3RCYXNlQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Books/BookUpdate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcQm9va1VwZGF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Shared/ErrorMessage.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEVycm9yTWVzc2FnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Shared/LoadingPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvYWRpbmdQcm9tcHQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-y93bybkgkk
-
-[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-ektgh1te9b
-
-[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/repo/imd/vladimirworld-BookCityLibrary/BookCityLibrary.UI/Pages/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

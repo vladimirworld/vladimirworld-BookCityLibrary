@@ -1,8 +1,22 @@
-﻿@page "/"
-@namespace BookCityLibrary.Pages
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+﻿@page
+@using BookCityLibrary.UI
+@model BookCityLibrary.UI.Pages._Host
+
 @{
-    Layout = "_Layout";
+    Layout = null;
 }
 
-<component type="typeof(App)" render-mode="ServerPrerendered"/>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Book City Library</title>
+    <base href="~/" />
+</head>
+<body>
+    <app>@(await Html.RenderComponentAsync<App>(RenderMode.WebAssembly))</app>
+    <script src="_framework/blazor.server.js"></script>
+    <script src="~/js/interop.js"></script>
+</body>
+</html>

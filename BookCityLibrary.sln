@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCityLibrary.Api", "Book
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCityLibrary.Repository", "BookCityLibrary.Repository\BookCityLibrary.Repository.csproj", "{BD17B9B7-37C0-45B7-B194-E725F9F4D03E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp.UI", "BlazorApp.UI\BlazorApp.UI.csproj", "{63EBC21D-E511-461B-B455-6B5CAF5E05B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{BD17B9B7-37C0-45B7-B194-E725F9F4D03E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD17B9B7-37C0-45B7-B194-E725F9F4D03E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD17B9B7-37C0-45B7-B194-E725F9F4D03E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63EBC21D-E511-461B-B455-6B5CAF5E05B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63EBC21D-E511-461B-B455-6B5CAF5E05B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63EBC21D-E511-461B-B455-6B5CAF5E05B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63EBC21D-E511-461B-B455-6B5CAF5E05B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

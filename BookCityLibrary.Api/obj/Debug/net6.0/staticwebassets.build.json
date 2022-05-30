@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CYk9K+7hsAjYIXFtph1b26TAf55dYCoSDq0KNyq1yNU=",
+  "Source": "BookCityLibrary.Api",
+  "BasePath": "_content/BookCityLibrary.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

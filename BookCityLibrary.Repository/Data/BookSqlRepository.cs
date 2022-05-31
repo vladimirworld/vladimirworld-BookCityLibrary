@@ -20,7 +20,8 @@ public class BookSqlRepository : IBookRepository
 
     public async Task<bool> Create(Book entity)
     {
-        const string sql = "INSERT INTO Books (Title, Year, Summary, Isbn, Price, Image, AuthorId) VALUES " +
+        const string sql = "PRAGMA foreign_keys = OFF; " +
+                           "INSERT INTO Books (Title, Year, Summary, Isbn, Price, Image, AuthorId) VALUES " +
                            "(@Title, @Year, @Summary, @Isbn, @Price, @Image, @AuthorId);";
 
         try
@@ -48,7 +49,7 @@ public class BookSqlRepository : IBookRepository
 
     public async Task<bool> Delete(Book entity)
     {
-        const string sql = "DELETE FROM Books WHERE Id = @Id";
+        const string sql = "PRAGMA foreign_keys = OFF; DELETE FROM Books WHERE Id = @Id";
 
         try
         {

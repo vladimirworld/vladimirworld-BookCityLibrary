@@ -1,7 +1,6 @@
 ﻿using BookCityLibrary.Repository.Data;
 using BookCityLibrary.Repository.DataAccess;
 using BookLibrary.Data.Interfaces;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace BookCityLibrary.Api.Infrastructure;
 

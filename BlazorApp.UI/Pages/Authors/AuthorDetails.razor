@@ -1,50 +1,50 @@
 ﻿@page "/authors/details/{Id:int}"
 @using Blazored.Toast.Services
 
-@inject IAuthorRepository _repo
-@inject NavigationManager _navManager
-@inject IToastService _toastService
+@inject IAuthorRepository Repo
+@inject NavigationManager NavManager
+@inject IToastService ToastService
 
-<h3>Author Details</h3>
+<h3>Подробнее об авторе</h3>
 
-@if (Model == null)
+@if (_model == null)
 {
-    <LoadingPrompt Message="Loading Data for Details" />
+    <LoadingPrompt Message="Загрузка данных" />
 }
 else
 {
     <div class="col-md-4">
         <table class="table table-responsive">
             <tr>
-                <td>First Name</td>
-                <td>@Model.FirstName</td>
+                <td>Имя</td>
+                <td>@_model.FirstName</td>
             </tr>
             <tr>
-                <td>Last Name</td>
-                <td>@Model.LastName</td>
+                <td>Фамилия</td>
+                <td>@_model.LastName</td>
             </tr>
             <tr>
-                <td>Biography</td>
-                <td>@Model.Bio</td>
+                <td>Биография</td>
+                <td>@_model.Bio</td>
             </tr>
         </table>
 
         <br />
 
-        @if (Model.Books == null || Model.Books.Count < 1)
+        @if (_model.Books == null || _model.Books.Count < 1)
         {
             <div class="alert alert-dismissible alert-secondary">
-                There currently are no Books for this Author
+                На данный момент у данного автора нет книг
             </div>
         }
         else
         {
             <div class="card" style="width: 18rem;">
                 <div class="card-header">
-                    <h4>Author's Books</h4>
+                    <h4>Книги автора</h4>
                 </div>
                 <ul class="list-group list-group-flush">
-                    @foreach (var book in Model.Books)
+                    @foreach (var book in _model.Books)
                     {
                         <li class="list-group-item"><a href="books/details/@book.Id"> @book.Title </a></li>
                     }
@@ -59,17 +59,17 @@ else
 
 <button @onclick="GoToEdit" class="btn btn-outline-warning">
     <span class="oi oi-pencil"></span>
-    Update Author
+    Редактировать автора
 </button>
 
 <button @onclick="GoToDelete" class="btn btn-outline-danger">
     <span class="oi oi-circle-x"></span>
-    Delete Author
+    Удалить автора
 </button>
 
 <button @onclick="BackToList" class="btn btn-outline-secondary">
     <span class="oi oi-media-skip-backward"></span>
-    Back To List
+    Вернуться к списку
 </button>
 
 
@@ -77,26 +77,26 @@ else
     [Parameter]
     public int Id { get; set; }
 
-    private Author Model = new Author();
+    private Author _model = new();
 
     protected override async Task OnInitializedAsync()
     {
-        Model = await _repo.GetSingle(Endpoints.AuthorsEndpoint, Id);
-        _toastService.ShowSuccess($"Now Viewing {Model.FirstName} {Model.LastName}");
+        _model = await Repo.GetSingle(Endpoints.AuthorsEndpoint, Id);
+        ToastService.ShowSuccess($"Выбран {_model.FirstName} {_model.LastName}");
     }
 
     private void BackToList()
     {
-        _navManager.NavigateTo("/authors/");
+        NavManager.NavigateTo("/authors/");
     }
 
     private void GoToEdit()
     {
-        _navManager.NavigateTo($"/authors/update/{Model.Id}");
+        NavManager.NavigateTo($"/authors/update/{_model.Id}");
     }
 
     private void GoToDelete()
     {
-        _navManager.NavigateTo($"/authors/delete/{Model.Id}");
+        NavManager.NavigateTo($"/authors/delete/{_model.Id}");
     }
 }

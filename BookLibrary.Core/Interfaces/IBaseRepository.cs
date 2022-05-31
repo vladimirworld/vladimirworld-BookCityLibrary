@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using BookLibrary.Data.Entities;
+﻿using BookLibrary.Data.Entities;
 
 namespace BookLibrary.Data.Interfaces;
 

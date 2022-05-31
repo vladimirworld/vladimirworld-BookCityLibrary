@@ -7,10 +7,10 @@
 @inject NavigationManager NavManager
 @inject IToastService ToastService
 
-<h3>Create Book</h3>
+<h3>Создать книгу</h3>
 @if(!_isSuccessful)
 {
-    <ErrorMessage Message="An error occurred during the operation" />
+    <ErrorMessage Message="Произошла ошибка" />
 }
 
 <EditForm Model="_model" OnValidSubmit="CreateBook">
@@ -20,7 +20,7 @@
     <ValidationSummary/>
     
     <div class="form-group">
-        <label for="Title">Title</label>
+        <label for="Title">Название</label>
         <InputText @bind-Value="_model.Title" class="form-control" id="Title" />
     </div>
 
@@ -30,12 +30,12 @@
     </div>
 
     <div class="form-group">
-        <label for="price">Price</label>
+        <label for="price">Цена</label>
         <InputNumber @bind-Value="_model.Price" class="form-control" id="price" />
     </div>
 
     <div class="form-group">
-        <label for="year">Year</label>
+        <label for="year">Год</label>
         <InputNumber @bind-Value="_model.Year" class="form-control" id="year" />
     </div>
 
@@ -54,18 +54,18 @@
     </div>
 
     <div class="form-group">
-        <label for="summary">Summary</label>
+        <label for="summary">Общее</label>
         <InputTextArea @bind-Value="_model.Summary" class="form-control" id="summary" />
     </div>
     
     <button @onclick="CreateBook" class="btn btn-success">
         <span class="oi oi-pencil"></span>
-        Submit Book
+        Применить
     </button>
     
     <button @onclick="BackToList" class="btn btn-warning">
         <span class="oi oi-media-skip-backward"></span>
-        Back To List
+        Вернуться к списку
     </button>
 </EditForm>
 
@@ -94,12 +94,12 @@
             var response = await Repo.Create(Endpoints.BooksEndpoint, _model);
             if (response != null)
             {
-                ToastService.ShowSuccess("Successfully created book record");
+                ToastService.ShowSuccess("Книга успешно добавлена");
             }
             else
             {
                 _isSuccessful = false;
-                ToastService.ShowError("An Error Occurred While Creating the Record!");
+                ToastService.ShowError("Произошла ошибка при создании записи!");
             }
         }
         finally

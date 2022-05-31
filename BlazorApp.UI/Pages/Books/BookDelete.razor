@@ -1,35 +1,35 @@
 ﻿@page "/books/delete/{Id:int}"
 @using Blazored.Toast.Services
 
-@inject IBookRepository _repo
-@inject NavigationManager _navManager
-@inject IToastService _toastService
+@inject IBookRepository Repo
+@inject NavigationManager NavManager
+@inject IToastService ToastService
 
-<h3>Delete Book</h3>
+<h3>Удалить книгу</h3>
 
 @if (!_isSuccessful)
 {
-    <ErrorMessage Message="Something Went Wrong With the Operation" />
+    <ErrorMessage Message="Что-то пошло не так" />
 }
 
 @if (Id < 1 || string.IsNullOrWhiteSpace(_model.Title))
 {
-    <ErrorMessage Message="Invalid Selection. Please Try Again" />
+    <ErrorMessage Message="Попробуйте снова" />
 }
 else if (_model == null)
 {
-    <LoadingPrompt Message="Loading Book Details" />
+    <LoadingPrompt Message="Загрузка данных по книге" />
 }
 else
 {
     <div class="col-md-4">
         <table class="table table-responsive">
             <tr>
-                <td>Title</td>
+                <td>Название</td>
                 <td>@_model.Title</td>
             </tr>
             <tr>
-                <td>Year</td>
+                <td>Год</td>
                 <td>@_model.Year</td>
             </tr>
             <tr>
@@ -40,12 +40,12 @@ else
                 @if (_model.Author == null)
                 {
                     <td class="alert alert-dismissible alert-secondary">
-                        No Authors for this record
+                        Нет авторов для данной книги
                     </td>
                 }
                 else
                 {
-                    <td>Author</td>
+                    <td>Автор</td>
                     <td>@_model.Author.FirstName @_model.Author.LastName</td>
                 }
                 </tr> 
@@ -56,12 +56,12 @@ else
 
 <button @onclick="DeleteBook" class="btn btn-danger">
     <span class="oi oi-delete"></span>
-    Delete book
+    Удалить книгу
 </button>
 
 <button @onclick="BackToList" class="btn btn-outline-secondary">
     <span class="oi oi-media-skip-backward"></span>
-    Back to List
+    Вернуться к списку
 </button>
 
 @code {
@@ -74,25 +74,25 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        _model = await _repo.GetSingle(Endpoints.BooksEndpoint, Id);
+        _model = await Repo.GetSingle(Endpoints.BooksEndpoint, Id);
     }
 
     private async Task DeleteBook()
     {
-        _isSuccessful = await _repo.Delete(Endpoints.BooksEndpoint, _model.Id);
+        _isSuccessful = await Repo.Delete(Endpoints.BooksEndpoint, _model.Id);
         if (_isSuccessful)
         {
-            _toastService.ShowSuccess($"Successfully Deleted Book Record: Id:{_model.Id} Title:{_model.Title}");
+            ToastService.ShowSuccess($"Запись с книгой успешно удалена: Id:{_model.Id} Название:{_model.Title}");
             BackToList();
         }
         else
         {
-            _toastService.ShowError("An Error Occurred During the Operation!");
+            ToastService.ShowError("Случилась ошибка!");
         }
     }
     
     private void BackToList()
     {
-        _navManager.NavigateTo("/books/");
+        NavManager.NavigateTo("/books/");
     }
 }

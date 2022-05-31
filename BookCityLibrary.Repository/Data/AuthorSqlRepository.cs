@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BookLibrary.Data.Entities;
+﻿using BookLibrary.Data.Entities;
 using BookLibrary.Data.Interfaces;
 using Dapper;
 using Microsoft.Data.Sqlite;

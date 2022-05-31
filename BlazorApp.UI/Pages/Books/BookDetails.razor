@@ -1,47 +1,47 @@
 ﻿@page "/books/details/{Id:int}"
 @using Blazored.Toast.Services
 
-@inject IBookRepository _repo
-@inject NavigationManager _navManager
-@inject IToastService _toastService
+@inject IBookRepository Repo
+@inject NavigationManager NavManager
+@inject IToastService ToastService
 
-<h3>Book Details</h3>
+<h3>Подброности</h3>
 
-@if (Model == null)
+@if (_model == null)
 {
-    <LoadingPrompt Message="Loading Data for Details" />
+    <LoadingPrompt Message="Загрузка подробных данных" />
 }
 else
 {
     <div class="col-md-4">
         <table class="table table-responsive">
             <tr>
-                <td>Title</td>
-                <td>@Model.Title</td>
+                <td>Название</td>
+                <td>@_model.Title</td>
             </tr>
             <tr>
-                <td>Year</td>
-                <td>@Model.Year</td>
+                <td>Год</td>
+                <td>@_model.Year</td>
             </tr>
             <tr>
                 <td>ISBN</td>
-                <td>@Model.Isbn</td>
+                <td>@_model.Isbn</td>
             </tr>
             <tr>
-                <td>Price</td>
-                <td>@($"{Model.Price:C}")</td>
+                <td>Цена</td>
+                <td>@($"{_model.Price:C}")</td>
             </tr>
             <tr>
-                <td>Author</td>
+                <td>Автор</td>
                 <td>
-                    <a href="authors/details/@Model.Author?.Id">
-                        @Model.Author?.FirstName @Model.Author?.LastName
+                    <a href="authors/details/@_model.Author?.Id">
+                        @_model.Author?.FirstName @_model.Author?.LastName
                     </a>
                 </td>
             </tr>
             <tr>
-                <td>Summary</td>
-                <td>@Model.Summary</td>
+                <td>Общее</td>
+                <td>@_model.Summary</td>
             </tr>
         </table>
     </div>
@@ -50,43 +50,43 @@ else
 
 <button @onclick="GoToEdit" class="btn btn-outline-warning">
     <span class="oi oi-pencil"></span>
-    Update Book
+    Обновить книгу
 </button>
 
 <button @onclick="GoToDelete" class="btn btn-outline-danger">
     <span class="oi oi-circle-x"></span>
-    Delete Book
+    Удалить книгу
 </button>
 
 <button @onclick="BackToList" class="btn btn-outline-secondary">
     <span class="oi oi-media-skip-backward"></span>
-    Back To List
+    Вернуться к списку
 </button>
 
 @code {
     [Parameter]
     public int Id { get; set; }
 
-    private Book Model = new Book();
+    private Book _model = new();
 
     protected override async Task OnInitializedAsync()
     {
-        Model = await _repo.GetSingle(Endpoints.BooksEndpoint, Id);
-        _toastService.ShowSuccess($"Now Viewing: {Model.Title}");
+        _model = await Repo.GetSingle(Endpoints.BooksEndpoint, Id);
+        ToastService.ShowSuccess($"Сейчас просматриваете: {_model.Title}");
     }
 
     private void BackToList()
     {
-        _navManager.NavigateTo("/books/");
+        NavManager.NavigateTo("/books/");
     }
 
     private void GoToEdit()
     {
-        _navManager.NavigateTo($"/books/update/{Model.Id}");
+        NavManager.NavigateTo($"/books/update/{_model.Id}");
     }
 
     private void GoToDelete()
     {
-        _navManager.NavigateTo($"/books/delete/{Model.Id}");
+        NavManager.NavigateTo($"/books/delete/{_model.Id}");
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace BookCityLibrary.Settings;
+﻿namespace BookCityLibrary.UI.Settings;
 
 public static class Endpoints
 {

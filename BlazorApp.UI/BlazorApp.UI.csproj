@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Blazored.Toast" Version="3.2.2" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\Authors\AuthorCreate.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Authors\AuthorDelete.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Authors\AuthorDetails.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Authors\AuthorList.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Authors\AuthorListBaseComponent.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Authors\AuthorUpdate.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Books\BookCreate.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Books\BookDelete.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Books\BookDetails.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Books\BookList.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Books\BookListBaseComponent.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Books\BookUpdate.razor" />
+    </ItemGroup>
+
+
+
+</Project>

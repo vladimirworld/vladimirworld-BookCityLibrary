@@ -1,5 +1,8 @@
-﻿using BookLibrary.Data.Entities;
+﻿using System;
+using System.Threading.Tasks;
+using BookLibrary.Data.Entities;
 using BookLibrary.Data.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookCityLibrary.Api.Controllers;
@@ -20,7 +23,7 @@ public class BooksController : BaseApiController
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    public async Task<IActionResult> GetBooks(string search)
+    public async Task<IActionResult> GetBooks(string? search)
     {
         try
         {

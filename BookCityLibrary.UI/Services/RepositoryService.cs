@@ -1,7 +1,12 @@
-﻿using System.Diagnostics;
-using BookCityLibrary.Contracts;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Net.Http;
+using System.Net.Http.Json;
+using System.Threading.Tasks;
+using BookCityLibrary.UI.Contracts;
 
-namespace BookCityLibrary.Services;
+namespace BookCityLibrary.UI.Services;
 
 public class RepositoryService<T> : IRepositoryService<T> where T : class
 {

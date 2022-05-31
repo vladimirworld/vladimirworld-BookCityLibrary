@@ -1,0 +1,15 @@
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\bin\Debug\net6.0\BookCityLibrary.Repository.deps.json
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\bin\Debug\net6.0\BookCityLibrary.Repository.dll
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\bin\Debug\net6.0\BookCityLibrary.Repository.pdb
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\bin\Debug\net6.0\BookLibrary.Core.dll
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\bin\Debug\net6.0\BookLibrary.Core.pdb
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\obj\Debug\net6.0\BookCityLibrary.Repository.csproj.AssemblyReference.cache
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\obj\Debug\net6.0\BookCityLibrary.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\obj\Debug\net6.0\BookCityLibrary.Repository.AssemblyInfoInputs.cache
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\obj\Debug\net6.0\BookCityLibrary.Repository.AssemblyInfo.cs
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\obj\Debug\net6.0\BookCityLibrary.Repository.csproj.CoreCompileInputs.cache
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\obj\Debug\net6.0\BookCityLibrary.Repository.csproj.CopyComplete
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\obj\Debug\net6.0\BookCityLibrary.Repository.dll
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\obj\Debug\net6.0\ref\BookCityLibrary.Repository.dll
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\obj\Debug\net6.0\BookCityLibrary.Repository.pdb
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Repository\obj\Debug\net6.0\refint\BookCityLibrary.Repository.dll

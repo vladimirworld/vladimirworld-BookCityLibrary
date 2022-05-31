@@ -1,7 +1,8 @@
-﻿using BookCityLibrary.Contracts;
-using BookCityLibrary.Models;
+﻿using System.Net.Http;
+using BookCityLibrary.UI.Contracts;
+using BookCityLibrary.UI.Models;
 
-namespace BookCityLibrary.Services;
+namespace BookCityLibrary.UI.Services;
 
 public class BookService : RepositoryService<Book>, IBookRepository
 {

@@ -1,6 +1,6 @@
-﻿using BookCityLibrary.Models;
+﻿using BookCityLibrary.UI.Models;
 
-namespace BookCityLibrary.Contracts;
+namespace BookCityLibrary.UI.Contracts;
 
 public interface IAuthorRepository : IRepositoryService<Author>
 {

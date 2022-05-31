@@ -1,4 +1,7 @@
-﻿namespace BookCityLibrary.Contracts;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace BookCityLibrary.UI.Contracts;
 
 public interface IRepositoryService<T> where T : class
 {

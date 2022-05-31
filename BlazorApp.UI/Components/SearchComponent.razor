@@ -1,0 +1,32 @@
+﻿<div class="">
+    <div class="input-group" style="position:relative;width:50%;min-width:50px;">
+        <input class="form-control"
+               type="search"
+               aria-label="Search"
+               @bind-value="SearchTerm"
+               placeholder="Search..."
+               @bind-value:event="oninput" />
+
+        <div class="input-group-append">
+            <button class="btn btn-success"
+                    type="submit"
+                    @onclick="HandleSearch">
+                <i class="oi oi-magnifying-glass"></i>
+                Search
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string SearchTerm { get; set; }
+
+    [Parameter]
+    public EventCallback<string> OnSearch { get; set; }
+
+    private async Task HandleSearch()
+    {
+        await OnSearch.InvokeAsync(SearchTerm);
+        StateHasChanged();
+    }
+}

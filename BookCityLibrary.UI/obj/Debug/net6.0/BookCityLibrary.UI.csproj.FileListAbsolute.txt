@@ -5,9 +5,7 @@ C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\Bo
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\BookCityLibrary.UI.deps.json
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\BookCityLibrary.UI.runtimeconfig.json
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\BookCityLibrary.UI.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\ref\BookCityLibrary.UI.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\BookCityLibrary.UI.pdb
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\obj\Debug\net6.0\BookCityLibrary.UI.GlobalUsings.g.cs
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\obj\Debug\net6.0\BookCityLibrary.UI.csproj.AssemblyReference.cache
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\obj\Debug\net6.0\BookCityLibrary.UI.GeneratedMSBuildEditorConfig.editorconfig
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\obj\Debug\net6.0\BookCityLibrary.UI.AssemblyInfoInputs.cache
@@ -25,11 +23,5 @@ C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\Bl
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\obj\Debug\net6.0\BookCityLibrary.UI.RazorAssemblyInfo.cache
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\obj\Debug\net6.0\BookCityLibrary.UI.RazorAssemblyInfo.cs
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\Blazored.LocalStorage.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\System.IO.Pipelines.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\bin\Debug\net6.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\obj\Debug\net6.0\BookCityLibrary.UI.csproj.CopyComplete
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.UI\obj\Debug\net6.0\refint\BookCityLibrary.UI.dll

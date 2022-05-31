@@ -4,7 +4,6 @@ C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\B
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\BookCityLibrary.Api.deps.json
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\BookCityLibrary.Api.runtimeconfig.json
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\BookCityLibrary.Api.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\ref\BookCityLibrary.Api.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\BookCityLibrary.Api.pdb
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\Dapper.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll
@@ -30,7 +29,6 @@ C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\S
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\System.Text.Json.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\runtimes\alpine-x64\native\libe_sqlite3.so
@@ -53,7 +51,6 @@ C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\B
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\BookLibrary.Core.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\BookCityLibrary.Repository.pdb
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\BookLibrary.Core.pdb
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\BookCityLibrary.Api.GlobalUsings.g.cs
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\BookCityLibrary.Api.csproj.AssemblyReference.cache
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\BookCityLibrary.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\BookCityLibrary.Api.AssemblyInfoInputs.cache
@@ -64,8 +61,9 @@ C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\B
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\staticwebassets.build.json
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\staticwebassets.development.json
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\scopedcss\bundle\BookCityLibrary.Api.styles.css
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\BookCityLibrary.Api.csproj.CopyComplete
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\BookCityLibrary.Api.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\ref\BookCityLibrary.Api.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\BookCityLibrary.Api.pdb
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\BookCityLibrary.Api.genruntimeconfig.cache
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\BookCityLibrary.Api.csproj.CopyComplete
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\refint\BookCityLibrary.Api.dll

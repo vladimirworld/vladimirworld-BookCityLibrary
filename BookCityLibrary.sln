@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCityLibrary.UI", "BookCityLibrary.UI\BookCityLibrary.UI.csproj", "{B2C3CC4B-92BF-429C-9374-A88F114A8059}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.Core", "BookLibrary.Core\BookLibrary.Core.csproj", "{9B61D451-CF72-404F-A203-A617C224A1CA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCityLibrary.Api", "BookCityLibrary.Api\BookCityLibrary.Api.csproj", "{8257C385-FBEF-406C-A12A-E5A88DD28EB8}"
@@ -16,10 +14,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B2C3CC4B-92BF-429C-9374-A88F114A8059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2C3CC4B-92BF-429C-9374-A88F114A8059}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2C3CC4B-92BF-429C-9374-A88F114A8059}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2C3CC4B-92BF-429C-9374-A88F114A8059}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9B61D451-CF72-404F-A203-A617C224A1CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9B61D451-CF72-404F-A203-A617C224A1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B61D451-CF72-404F-A203-A617C224A1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU

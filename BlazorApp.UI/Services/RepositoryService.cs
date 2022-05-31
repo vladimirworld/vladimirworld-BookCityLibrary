@@ -1,7 +1,12 @@
-﻿using System.Diagnostics;
-using BlazorAppTest.Contracts;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Net.Http;
+using System.Net.Http.Json;
+using System.Threading.Tasks;
+using BlazorApp.UI.Contracts;
 
-namespace BlazorAppTest.Services;
+namespace BlazorApp.UI.Services;
 
 public class RepositoryService<T> : IRepositoryService<T> where T : class
 {

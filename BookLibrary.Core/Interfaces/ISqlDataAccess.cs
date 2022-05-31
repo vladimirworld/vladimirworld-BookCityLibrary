@@ -1,4 +1,7 @@
-﻿namespace BookLibrary.Data.Interfaces;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace BookLibrary.Data.Interfaces;
 
 public interface ISqlDataAccess
 {

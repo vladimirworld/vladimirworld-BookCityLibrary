@@ -1,4 +1,7 @@
-﻿namespace BlazorAppTest.Contracts;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace BlazorApp.UI.Contracts;
 
 public interface IRepositoryService<T> where T : class
 {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace BlazorAppTest.Models;
+namespace BlazorApp.UI.Models;
 
 public class Book
 {
@@ -23,7 +23,7 @@ public class Book
         
     public decimal? Price { get; set; }
 
-    public int AuthorId { get; set; }
+    public int? AuthorId { get; set; }
         
     public virtual Author Author { get; set; }
 }

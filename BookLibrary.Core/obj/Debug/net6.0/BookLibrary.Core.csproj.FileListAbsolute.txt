@@ -1,8 +1,6 @@
 C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\bin\Debug\net6.0\BookLibrary.Core.deps.json
 C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\bin\Debug\net6.0\BookLibrary.Core.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\bin\Debug\net6.0\ref\BookLibrary.Core.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\bin\Debug\net6.0\BookLibrary.Core.pdb
-C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\BookLibrary.Core.GlobalUsings.g.cs
 C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\BookLibrary.Core.csproj.AssemblyReference.cache
 C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\BookLibrary.Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\BookLibrary.Core.AssemblyInfoInputs.cache
@@ -11,3 +9,4 @@ C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\Book
 C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\BookLibrary.Core.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\ref\BookLibrary.Core.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\BookLibrary.Core.pdb
+C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\refint\BookLibrary.Core.dll

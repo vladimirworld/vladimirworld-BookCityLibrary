@@ -1,6 +1,6 @@
-﻿using BlazorAppTest.Models;
+﻿using BlazorApp.UI.Models;
 
-namespace BlazorAppTest.Contracts;
+namespace BlazorApp.UI.Contracts;
 
 public interface IBookRepository : IRepositoryService<Book>
 {

@@ -10,6 +10,7 @@ build_property.RootNamespace = BookCityLibrary.Api
 build_property.RootNamespace = BookCityLibrary.Api
 build_property.ProjectDir = C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\
 build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api
 build_property._RazorSourceGeneratorDebug = 

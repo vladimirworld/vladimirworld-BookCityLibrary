@@ -1,7 +1,8 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace BlazorAppTest.Models;
+namespace BlazorApp.UI.Models;
 
 public class Author
 {

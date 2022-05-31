@@ -1,7 +1,8 @@
-﻿using BlazorAppTest.Contracts;
-using BlazorAppTest.Models;
+﻿using System.Net.Http;
+using BlazorApp.UI.Contracts;
+using BlazorApp.UI.Models;
 
-namespace BlazorAppTest.Services;
+namespace BlazorApp.UI.Services;
 
 public class BookService : RepositoryService<Book>, IBookRepository
 {

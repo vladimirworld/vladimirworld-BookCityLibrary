@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using System;
+using System.Net.Http;
+using Microsoft.AspNetCore.Components;
 
-namespace BlazorAppTest.Services;
+namespace BlazorApp.UI.Services;
 
 public class ApiService
 {

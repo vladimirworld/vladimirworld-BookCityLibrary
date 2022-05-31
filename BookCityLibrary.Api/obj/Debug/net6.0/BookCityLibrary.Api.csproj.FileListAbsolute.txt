@@ -63,7 +63,9 @@ C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\s
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\scopedcss\bundle\BookCityLibrary.Api.styles.css
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\BookCityLibrary.Api.csproj.CopyComplete
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\BookCityLibrary.Api.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\ref\BookCityLibrary.Api.dll
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\refint\BookCityLibrary.Api.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\BookCityLibrary.Api.pdb
 C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\BookCityLibrary.Api.genruntimeconfig.cache
-C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\refint\BookCityLibrary.Api.dll
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\obj\Debug\net6.0\ref\BookCityLibrary.Api.dll
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\AutoMapper.dll
+C:\repo\imd\vladimirworld-BookCityLibrary\BookCityLibrary.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

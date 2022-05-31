@@ -2,10 +2,10 @@
 @using Blazored.Toast.Services
 @using Microsoft.AspNetCore.Components
 
-@inject IBookRepository _repo
-@inject IAuthorRepository _authorRepo
-@inject NavigationManager _navManager
-@inject IToastService _toastService
+@inject IBookRepository Repo
+@inject IAuthorRepository AuthorRepo
+@inject NavigationManager NavManager
+@inject IToastService ToastService
 
 <h3>Create Book</h3>
 @if(!_isSuccessful)
@@ -71,32 +71,47 @@
 
 
 @code {
-    private Book _model = new Book();
-    private IList<Author> _authors;
+    private readonly Book _model = new();
+    private IList<Author>? _authors;
     private bool _isSuccessful = true;
-    
+    bool _isSubmitting;
+
     protected override async Task OnInitializedAsync()
     {
-        _authors = await _authorRepo.GetAll(Endpoints.AuthorsEndpoint);
+        _authors = await AuthorRepo.GetAll(Endpoints.AuthorsEndpoint);
     }
     
     private async Task CreateBook()
     {
-        var response = await _repo.Create(Endpoints.BooksEndpoint, _model);
-        if (response != null)
+        if (_isSubmitting)
         {
-            _toastService.ShowSuccess("Successfully created book record", "");
-            BackToList();
+            return;
         }
-        else
+        _isSubmitting = true;
+
+        try
         {
-            _isSuccessful = false;
-            _toastService.ShowError("An Error Occurred While Creating the Record!");
+            var response = await Repo.Create(Endpoints.BooksEndpoint, _model);
+            if (response != null)
+            {
+                ToastService.ShowSuccess("Successfully created book record");
+            }
+            else
+            {
+                _isSuccessful = false;
+                ToastService.ShowError("An Error Occurred While Creating the Record!");
+            }
         }
+        finally
+        {
+            _isSubmitting = false;
+        }
+        
+        BackToList();
     }
 
     private void BackToList()
     {
-        _navManager.NavigateTo("/books");
+        NavManager.NavigateTo("/books");
     }
 }

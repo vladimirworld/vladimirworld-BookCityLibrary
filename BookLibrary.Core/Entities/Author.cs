@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
+using System.Text.Json.Serialization;
 
 namespace BookLibrary.Data.Entities;
 
@@ -19,5 +20,5 @@ public class Author : BaseEntity
 
     public string Bio { get; set; }
 
-    public IList<Book>? Books { get; set; }
+    public virtual IList<Book>? Books { get; set; }
 }

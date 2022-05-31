@@ -135,7 +135,7 @@ public class BookSqlRepository : IBookRepository
     public async Task<bool> Update(Book entity)
     {
         const string sql = "UPDATE Books SET Title = @Title, Summary = @Summary, Isbn = @Isbn, Year = @Year," +
-                           " Image = @Image, Price = @Price WHERE Id = @Id";
+                           " Image = @Image, Price = @Price, AuthorId = @AuthorId WHERE Id = @Id";
 
         try
         {

@@ -1,5 +1,4 @@
 using BlazorApp.UI.Contracts;
-using BlazorApp.UI.Middlewares;
 using BlazorApp.UI.Services;
 using Blazored.Toast;
 
@@ -27,7 +26,6 @@ var builder = WebApplication.CreateBuilder(args);
     // Configure the HTTP request pipeline.
     if (!app.Environment.IsDevelopment())
     {
-        app.UseMiddleware<ErrorHandlerMiddleware>();
         app.UseExceptionHandler("/Error");
         // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
         app.UseHsts();

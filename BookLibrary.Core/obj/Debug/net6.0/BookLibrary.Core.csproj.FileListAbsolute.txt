@@ -7,6 +7,6 @@ C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\Book
 C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\BookLibrary.Core.AssemblyInfo.cs
 C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\BookLibrary.Core.csproj.CoreCompileInputs.cache
 C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\BookLibrary.Core.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\ref\BookLibrary.Core.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\BookLibrary.Core.pdb
 C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\refint\BookLibrary.Core.dll
+C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\BookLibrary.Core.pdb
+C:\repo\imd\vladimirworld-BookCityLibrary\BookLibrary.Core\obj\Debug\net6.0\ref\BookLibrary.Core.dll

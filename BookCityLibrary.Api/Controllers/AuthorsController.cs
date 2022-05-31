@@ -1,8 +1,7 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using AutoMapper;
+using BookCityLibrary.Api.Dtos;
 using BookLibrary.Data.Entities;
 using BookLibrary.Data.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookCityLibrary.Api.Controllers;
@@ -10,9 +9,11 @@ namespace BookCityLibrary.Api.Controllers;
 public class AuthorsController : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IMapper _mapper;
 
-    public AuthorsController(IUnitOfWork unitOfWork)
+    public AuthorsController(IUnitOfWork unitOfWork, IMapper mapper)
     {
+        _mapper = mapper;
         _unitOfWork = unitOfWork;
     }
 
@@ -81,7 +82,7 @@ public class AuthorsController : BaseApiController
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    public async Task<IActionResult> CreateAuthor([FromBody] Author? author)
+    public async Task<IActionResult> CreateAuthor([FromBody] AuthorDto? author)
     {
         try
         {
@@ -95,7 +96,9 @@ public class AuthorsController : BaseApiController
                 return BadRequest(ModelState);
             }
 
-            var isSuccess = await _unitOfWork.AuthorRepository.Create(author);
+            var model = _mapper.Map<Author>(author);
+            
+            var isSuccess = await _unitOfWork.AuthorRepository.Create(model);
 
             return !isSuccess ? InternalError($"Record creation failed") : Created("CreateAuthor", new { author });
         }
@@ -116,7 +119,7 @@ public class AuthorsController : BaseApiController
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    public async Task<IActionResult> UpdateAuthor(int id, [FromBody] Author? authorToUpdate)
+    public async Task<IActionResult> UpdateAuthor(int id, [FromBody] AuthorDto? authorToUpdate)
     {
         try
         {
@@ -137,7 +140,9 @@ public class AuthorsController : BaseApiController
                 return BadRequest(ModelState);
             }
 
-            var isSuccess = await _unitOfWork.AuthorRepository.Update(authorToUpdate);
+            var model = _mapper.Map<Author>(authorToUpdate);
+
+            var isSuccess = await _unitOfWork.AuthorRepository.Update(model);
 
             if (!isSuccess)
             {

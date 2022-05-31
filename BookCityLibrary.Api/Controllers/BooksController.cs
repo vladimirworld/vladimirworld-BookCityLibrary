@@ -1,8 +1,7 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using AutoMapper;
+using BookCityLibrary.Api.Dtos;
 using BookLibrary.Data.Entities;
 using BookLibrary.Data.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookCityLibrary.Api.Controllers;
@@ -10,9 +9,11 @@ namespace BookCityLibrary.Api.Controllers;
 public class BooksController : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IMapper _mapper;
 
-    public BooksController(IUnitOfWork unitOfWork)
+    public BooksController(IUnitOfWork unitOfWork, IMapper mapper)
     {
+        _mapper = mapper;
         _unitOfWork = unitOfWork;
     }
 
@@ -80,7 +81,7 @@ public class BooksController : BaseApiController
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    public async Task<IActionResult> CreateBook([FromBody] Book? book)
+    public async Task<IActionResult> CreateBook([FromBody] BookDto? book)
     {
         try
         {
@@ -94,7 +95,9 @@ public class BooksController : BaseApiController
                 return BadRequest(ModelState);
             }
 
-            var isSuccess = await _unitOfWork.BookRepository.Create(book);
+            var model = _mapper.Map<Book>(book);
+
+            var isSuccess = await _unitOfWork.BookRepository.Create(model);
 
             return !isSuccess ? InternalError($"Record creation failed") : Created("CreateBook", new { book });
         }
@@ -114,7 +117,7 @@ public class BooksController : BaseApiController
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    public async Task<IActionResult> UpdateBook(int id, [FromBody] Book? bookToUpdate)
+    public async Task<IActionResult> UpdateBook(int id, [FromBody] BookDto? bookToUpdate)
     {
         try
         {
@@ -135,7 +138,9 @@ public class BooksController : BaseApiController
                 return BadRequest(ModelState);
             }
 
-            var isSuccess = await _unitOfWork.BookRepository.Update(bookToUpdate);
+            var model = _mapper.Map<Book>(bookToUpdate);
+
+            var isSuccess = await _unitOfWork.BookRepository.Update(model);
 
             if (!isSuccess)
             {

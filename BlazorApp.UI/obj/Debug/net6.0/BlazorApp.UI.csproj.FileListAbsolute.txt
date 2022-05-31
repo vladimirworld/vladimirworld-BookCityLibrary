@@ -7,6 +7,7 @@ C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\bin\Debug\net6.0\BlazorAp
 C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\bin\Debug\net6.0\BlazorApp.UI.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\bin\Debug\net6.0\BlazorApp.UI.pdb
 C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\bin\Debug\net6.0\Blazored.Toast.dll
+C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\obj\Debug\net6.0\BlazorApp.UI.csproj.AssemblyReference.cache
 C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\obj\Debug\net6.0\BlazorApp.UI.GeneratedMSBuildEditorConfig.editorconfig
 C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\obj\Debug\net6.0\BlazorApp.UI.AssemblyInfoInputs.cache
@@ -23,8 +24,7 @@ C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\obj\Debug\net6.0\scopedcs
 C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\obj\Debug\net6.0\scopedcss\projectbundle\BlazorApp.UI.bundle.scp.css
 C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\obj\Debug\net6.0\BlazorApp.UI.csproj.CopyComplete
 C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\obj\Debug\net6.0\BlazorApp.UI.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\obj\Debug\net6.0\ref\BlazorApp.UI.dll
+C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\obj\Debug\net6.0\refint\BlazorApp.UI.dll
 C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\obj\Debug\net6.0\BlazorApp.UI.pdb
 C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\obj\Debug\net6.0\BlazorApp.UI.genruntimeconfig.cache
-C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\obj\Debug\net6.0\refint\BlazorApp.UI.dll
-C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\obj\Debug\net6.0\ref\BlazorApp.UI.dll

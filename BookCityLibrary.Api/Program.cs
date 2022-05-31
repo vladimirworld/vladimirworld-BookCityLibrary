@@ -1,6 +1,8 @@
 using BookCityLibrary.Api.Extensions;
 using BookCityLibrary.Api.Infrastructure;
+using BookCityLibrary.Api.Middlewares;
 using BookCityLibrary.Repository.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +20,14 @@ builder.Services.AddCors(opt =>
                 .AllowAnyMethod()
                 .AllowAnyHeader());
 });
+
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = true; 
+});
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 
 var app = builder.Build();
 
@@ -44,6 +54,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BookCityLibrary.Api v1"));
 }
+app.UseMiddleware<ErrorHandlerMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseCors("CorsPolicy");

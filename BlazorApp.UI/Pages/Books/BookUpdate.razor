@@ -107,11 +107,25 @@ else
 
     private async Task UpdateBook()
     {
-        _isSuccessful = await _repo.Update(Endpoints.BooksEndpoint, _model, _model.Id);
+        bool _isSuccessful;
+
+        try
+        {
+            _isSuccessful = await _repo.Update(Endpoints.BooksEndpoint, _model, _model.Id);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+
         if (_isSuccessful)
         {
             _toastService.ShowSuccess($"Successfully Updated Book Record: {_model.Id} {_model.Title}");
             BackToList();
+        }
+        else
+        {
+            _toastService.ShowError("An error occurred while updating the record!");
         }
     }
 

@@ -2,13 +2,13 @@
 @using Blazored.Toast.Services
 @using Microsoft.AspNetCore.Components
 
-@inject IAuthorRepository _repo
-@inject NavigationManager _navManager
-@inject IToastService _taostService
+@inject IAuthorRepository Repo
+@inject NavigationManager NavManager
+@inject IToastService ToastService
 
 <h3>Create An Author</h3>
 
-<EditForm Model="Model" OnValidSubmit="CreateAuthor">
+<EditForm Model="_model" OnValidSubmit="CreateAuthor">
     
     <DataAnnotationsValidator />
             
@@ -16,18 +16,16 @@
     
     <div class="form-group">
         <label for="firstName">First Name</label>
-        <InputText @bind-Value="@Model.FirstName" class="form-control" id="firstName"/>
+        <InputText @bind-Value="@_model.FirstName" class="form-control" id="firstName"/>
     </div>
     <div class="form-group">
         <label for="lastName">Last Name</label>
-        <InputText @bind-Value="@Model.LastName" class="form-control" id="lastName"/>
+        <InputText @bind-Value="@_model.LastName" class="form-control" id="lastName"/>
     </div>
     <div class="form-group">
         <label for="bio">Biography</label>
-        <InputTextArea @bind-Value="@Model.Bio" class="form-control" id="bio"/>
+        <InputTextArea @bind-Value="@_model.Bio" class="form-control" id="bio"/>
     </div>
-
-
 
     <button class="btn btn-primary" type="submit">
         <span class="oi oi-pencil"></span>
@@ -41,20 +39,35 @@
 </EditForm>
 
 @code {
-    private Author Model = new Author();
-
+    private readonly Author _model = new();
+    bool _isSubmitting;
+    
     private async Task CreateAuthor()
     {
-        var response = await _repo.Create(Endpoints.AuthorsEndpoint, Model);
-        if (response != null)
+        if (_isSubmitting)
         {
-            _taostService.ShowSuccess("Author created successfully");
-            BackToList();
+            return;
         }
+        _isSubmitting = true;
+
+        try
+        {
+            var response = await Repo.Create(Endpoints.AuthorsEndpoint, _model);
+            if (response != null)
+            {
+                ToastService.ShowSuccess("Author created successfully");
+            }
+        }
+        finally
+        {
+            _isSubmitting = false;
+        }
+        
+        BackToList();
     }
 
     private void BackToList()
     {
-        _navManager.NavigateTo("/authors/");
+        NavManager.NavigateTo("/authors/");
     }
 }

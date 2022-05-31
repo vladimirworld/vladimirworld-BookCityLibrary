@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KpIGiYGbZXlzmzJzyLySzocO52GOFAN3+Ohx1P7xCww=",
+  "Hash": "aT4DSOnk0przx+DcjIJEzN9jq8RKSWecYNNIcg+Truo=",
   "Source": "BlazorApp.UI",
   "BasePath": "_content/BlazorApp.UI",
   "Mode": "Default",
@@ -83,23 +83,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
-    },
-    {
-      "Identity": "C:\\repo\\imd\\vladimirworld-BookCityLibrary\\BlazorApp.UI\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "BlazorApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\repo\\imd\\vladimirworld-BookCityLibrary\\BlazorApp.UI\\wwwroot\\",
-      "BasePath": "_content/BlazorApp.UI",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\repo\\imd\\vladimirworld-BookCityLibrary\\BlazorApp.UI\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
@@ -202,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Identity": "C:\\repo\\imd\\vladimirworld-BookCityLibrary\\BlazorApp.UI\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "BlazorApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\repo\\imd\\vladimirworld-BookCityLibrary\\BlazorApp.UI\\wwwroot\\",
+      "BasePath": "_content/BlazorApp.UI",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\repo\\imd\\vladimirworld-BookCityLibrary\\BlazorApp.UI\\wwwroot\\css\\open-iconic\\ICON-LICENSE",

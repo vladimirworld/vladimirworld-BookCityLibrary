@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "CiB3leuKCWX19f/LsrcI+aXsauJDXYsLHApssyL3E27kStYtjWlSJcFeiJQnjB9ZV/fx2JK9Mi9kyNn2KXcCRw==",
+  "dgSpecHash": "RQ/Ro503VElDjkoeeOss2PAAlFvvZgeH81xUKUNRJElqsXwu+yitdDyK2ZjG1HLZp8qs9qH0edByqvA+9TJEHA==",
   "success": true,
   "projectFilePath": "C:\\repo\\imd\\vladimirworld-BookCityLibrary\\BookCityLibrary.Api\\BookCityLibrary.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Boris\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\Boris\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Boris\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\Boris\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Boris\\.nuget\\packages\\microsoft.data.sqlite\\7.0.0-preview.4.22229.2\\microsoft.data.sqlite.7.0.0-preview.4.22229.2.nupkg.sha512",
     "C:\\Users\\Boris\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.0-preview.4.22229.2\\microsoft.data.sqlite.core.7.0.0-preview.4.22229.2.nupkg.sha512",
     "C:\\Users\\Boris\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0-preview.4.22229.2\\microsoft.entityframeworkcore.7.0.0-preview.4.22229.2.nupkg.sha512",

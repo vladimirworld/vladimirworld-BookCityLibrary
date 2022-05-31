@@ -1,4 +1,4 @@
-# vladimirworld-BookCityLibrary
+# Проект Book City Library
 
 Если запускать приложение из-под VS, то запустятся два проекта: один для АПИ, другой для UI
 

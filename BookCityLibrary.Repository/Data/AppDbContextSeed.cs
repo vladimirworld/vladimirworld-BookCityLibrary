@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BookLibrary.Data.Entities;
+﻿using BookLibrary.Data.Entities;
 
 namespace BookCityLibrary.Repository.Data;
 
@@ -15,21 +12,21 @@ public static class AppDbContextSeed
             {
                 new()
                 {
-                    FirstName = "Andrew",
-                    LastName = "Lock",
-                    Bio = "Author and blogger of ASP.Net Core under Manning, physical and digital."
+                    FirstName = "Александр",
+                    LastName = "Пушкин",
+                    Bio = "А. Пушкин начал писать свои первые произведения уже в семь лет."
                 },
                 new()
                 {
-                    FirstName = "Jon",
-                    LastName = "Smith",
-                    Bio = "Technical writer for Entity Framework Core documentation."
+                    FirstName = "Джон",
+                    LastName = "Смит",
+                    Bio = "Написал книгу по Entity Framework."
                 },
                 new()
                 {
-                    FirstName = "Adam",
-                    LastName = "Freeman",
-                    Bio = "UK based author of many software development framework books."
+                    FirstName = "Михаил",
+                    LastName = "Булгаков",
+                    Bio = "Написал \"Мастера и Маргариту\"."
                 }
             };
 
@@ -43,10 +40,10 @@ public static class AppDbContextSeed
                 new()
                 {
                     AuthorId = 1,
-                    Title = "ASP.Net Core In Action",
-                    Year = 2018,
-                    Summary = "A particle guide on the ASP.Net Core framework.",
-                    Isbn = "978-1617294617",
+                    Title = "Евгений Онегин",
+                    Year = 1833,
+                    Summary = "Роман в стихах русского писателя и поэта Александра Сергеевича Пушкина",
+                    Isbn = "128-1617294617",
                     Price = 44.99m,
                     Image = "empty"
                 },
@@ -56,7 +53,7 @@ public static class AppDbContextSeed
                     Title = "Entity Framework Core In Action",
                     Year = 2018,
                     Summary =
-                        "This teaches you how to access and update relational data from .NET applications. Following the crystal-clear explanations, real-world examples, and around 100 diagrams, you’ll discover time-saving patterns and best practices for security, performance tuning, and unit testing.",
+                        "Книга научит пользоваться Entity Framework",
                     Isbn = "978-1617294563",
                     Price = 39.70m,
                     Image = "empty"
@@ -64,10 +61,10 @@ public static class AppDbContextSeed
                 new()
                 {
                     AuthorId = 3,
-                    Title = "Pro ASP.Net Core 3",
-                    Year = 2020,
+                    Title = "Мастер и Маргарита",
+                    Year = 1966,
                     Summary =
-                        "Now in its 8th edition, the comprehensive book you need to learn ASP.NET Core development!",
+                        "Роман Михаила Афанасьевича Булгакова, работа над которым началась в декабре 1928 года и продолжалась вплоть до смерти писателя",
                     Isbn = "978-1484254394",
                     Price = 34.99m,
                     Image = "empty"
@@ -75,10 +72,10 @@ public static class AppDbContextSeed
                 new()
                 {
                     AuthorId = 3,
-                    Title = "Pro React 16",
-                    Year = 2019,
+                    Title = "Копыто инженера",
+                    Year = 1928,
                     Summary =
-                        "Use this book to build dynamic JavaScript applications using the popular React library.",
+                        "Вторая тетрадь из сохранившихся черновиков первой редакции романа 1928—1929 годов при публикации условно названа «Копыто инженера»",
                     Isbn = "978-1484244500",
                     Price = 35.97m,
                     Image = "empty"

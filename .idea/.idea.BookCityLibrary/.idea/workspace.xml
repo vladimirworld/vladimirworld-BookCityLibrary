@@ -17,70 +17,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec644fcb-8b8f-4acb-a7e2-96d45feb61ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Mappers/AuthorProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Mappers/BookProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Mappers/IgnoreVirtualExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BookCityLibrary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BookCityLibrary/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/BookCityLibrary/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BookCityLibrary/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/BookCityLibrary/FileContentIndex/18762c0c-e003-4c54-b7c1-9b4c0b3bb558.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/BookCityLibrary/FileContentIndex/1c877694-1d07-413f-a935-3663898a57ee.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/BookCityLibrary/FileContentIndex/c8106573-2bd8-4c04-8e10-4e8017994b8d.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/BookCityLibrary/FileContentIndex/d27cf605-616b-41ae-b6ff-509be21a2b61.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/BookCityLibrary/FileContentIndex/0721d4ec-f7d2-485e-a783-1691804c1692.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/BookCityLibrary/FileContentIndex/5b7770de-9563-4913-a1f0-0370670dc56b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/BookCityLibrary/FileContentIndex/8664ab5d-bab4-4fdd-9c3d-83558f1eff06.vsidx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/BookCityLibrary/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BookCityLibrary/v17/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/bookcitylibrary.metadata.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/bookcitylibrary.metadata.v2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/bookcitylibrary.projects.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/bookcitylibrary.projects.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Middlewares/ErrorHandlerMiddleware.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/App.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Components/SearchComponent.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Components/SearchComponent.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Contracts/IRepositoryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Contracts/IRepositoryService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Models/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Models/Author.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Authors/AuthorCreate.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Authors/AuthorCreate.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Authors/AuthorDelete.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Authors/AuthorDelete.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Authors/AuthorDetails.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Authors/AuthorDetails.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Authors/AuthorList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Authors/AuthorList.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Authors/AuthorListBaseComponent.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Authors/AuthorListBaseComponent.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Authors/AuthorUpdate.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Authors/AuthorUpdate.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Books/BookCreate.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Books/BookCreate.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Books/BookDelete.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Books/BookDelete.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Books/BookDetails.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Books/BookDetails.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Books/BookList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Books/BookList.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Books/BookListBaseComponent.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Books/BookListBaseComponent.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Books/BookUpdate.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Books/BookUpdate.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Util/AppException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Error.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Error.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Services/ApiService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Services/ApiService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Services/AuthorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Services/AuthorService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Services/BookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Services/BookService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Services/RepositoryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Services/RepositoryService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/Shared/SurveyPrompt.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/Shared/SurveyPrompt.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/_Imports.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorApp.UI/bin/Debug/net6.0/BlazorApp.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/bin/Debug/net6.0/BlazorApp.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorApp.UI/bin/Debug/net6.0/BlazorApp.UI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/bin/Debug/net6.0/BlazorApp.UI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/BlazorApp.UI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/BlazorApp.UI.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.RazorAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.RazorAssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/BlazorApp.UI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/project.razor.vs.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/project.razor.vs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/ref/BlazorApp.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/ref/BlazorApp.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/refint/BlazorApp.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/refint/BlazorApp.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorApp.UI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp.UI/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/BookCityLibrary.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/BookCityLibrary.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/BookShop.db" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/BookShop.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Controllers/AuthorsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Controllers/AuthorsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Controllers/BooksController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookCityLibrary.Api.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookCityLibrary.Api.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/BookShop.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/BookShop.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/BookShop.db-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Dtos/PaginationDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Helpers/HttpExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Helpers/HttpExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/Infrastructure/DependencyInjectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/Infrastructure/DependencyInjectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookCityLibrary.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookCityLibrary.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookCityLibrary.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookCityLibrary.Api.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookCityLibrary.Repository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookCityLibrary.Repository.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookCityLibrary.Repository.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookCityLibrary.Repository.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookLibrary.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookLibrary.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookLibrary.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/bin/Debug/net6.0/BookLibrary.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/BookCityLibrary.Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/BookCityLibrary.Api.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/BookCityLibrary.Api.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/BookCityLibrary.Api.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/BookCityLibrary.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/ref/BookCityLibrary.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/ref/BookCityLibrary.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/refint/BookCityLibrary.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/Debug/net6.0/refint/BookCityLibrary.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Api/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Api/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/AppDbContextSeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/AppDbContextSeed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/AuthorSqlRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/AuthorSqlRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/BookSqlRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/Data/BookSqlRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/DataAccess/SqliteDataAccess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/DataAccess/SqliteDataAccess.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/bin/Debug/net6.0/BookCityLibrary.Repository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/bin/Debug/net6.0/BookCityLibrary.Repository.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/bin/Debug/net6.0/BookCityLibrary.Repository.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/bin/Debug/net6.0/BookCityLibrary.Repository.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/bin/Debug/net6.0/BookLibrary.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/bin/Debug/net6.0/BookLibrary.Core.dll" afterDir="false" />
@@ -88,113 +93,20 @@
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/BookCityLibrary.Repository.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/BookCityLibrary.Repository.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/Debug/net6.0/BookCityLibrary.Repository.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/Debug/net6.0/BookCityLibrary.Repository.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/Debug/net6.0/BookCityLibrary.Repository.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/Debug/net6.0/BookCityLibrary.Repository.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/Debug/net6.0/BookCityLibrary.Repository.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/Debug/net6.0/BookCityLibrary.Repository.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/Debug/net6.0/BookCityLibrary.Repository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/Debug/net6.0/BookCityLibrary.Repository.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/Debug/net6.0/BookCityLibrary.Repository.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/Debug/net6.0/BookCityLibrary.Repository.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BookCityLibrary.Repository/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/App.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/BookCityLibrary.UI.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/BookCityLibrary.UI.csproj.DotSettings.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Components/SearchComponent.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Contracts/IAuthorRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Contracts/IBookRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Contracts/IRepositoryService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Models/Author.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Models/Book.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Models/UserModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/Authors/AuthorCreate.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/Authors/AuthorDelete.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/Authors/AuthorDetails.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/Authors/AuthorList.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/Authors/AuthorListBaseComponent.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/Authors/AuthorUpdate.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/Books/BookCreate.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/Books/BookDelete.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/Books/BookDetails.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/Books/BookList.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/Books/BookListBaseComponent.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/Books/BookUpdate.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/Index.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/_Host.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Pages/_Host.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Services/ApiService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Services/AuthorService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Services/BookService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Services/RepositoryService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Settings/Endpoints.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Shared/ErrorMessage.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Shared/LoadingPrompt.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Shared/MainLayout.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/Shared/NavMenu.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/_Imports.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/bin/Debug/net6.0/Blazored.LocalStorage.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/bin/Debug/net6.0/Blazored.Toast.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/bin/Debug/net6.0/BookCityLibrary.UI.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/bin/Debug/net6.0/BookCityLibrary.UI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/bin/Debug/net6.0/BookCityLibrary.UI.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/bin/Debug/net6.0/BookCityLibrary.UI.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/bin/Debug/net6.0/BookCityLibrary.UI.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/bin/Debug/net6.0/BookCityLibrary.UI.staticwebassets.runtime.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/bin/Debug/net6.0/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/bin/Debug/net6.0/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/BookCityLibrary.UI.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/BookCityLibrary.UI.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/BookCityLibrary.UI.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.RazorAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.RazorAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/BookCityLibrary.UI.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/apphost.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/ref/BookCityLibrary.UI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/refint/BookCityLibrary.UI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/rider.project.restore.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/obj/staticwebassets.pack.sentinel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/wwwroot/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/wwwroot/css/bootstrap/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/wwwroot/css/bootstrap/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/wwwroot/css/open-iconic/FONT-LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/wwwroot/css/open-iconic/ICON-LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/wwwroot/css/open-iconic/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/wwwroot/css/open-iconic/font/fonts/open-iconic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/wwwroot/css/open-iconic/font/fonts/open-iconic.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/wwwroot/css/open-iconic/font/fonts/open-iconic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/wwwroot/css/open-iconic/font/fonts/open-iconic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCityLibrary.UI/wwwroot/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLibrary.Core/Entities/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Entities/Author.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLibrary.Core/Entities/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Entities/Book.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IBaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/IBaseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/ISqlDataAccess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/Interfaces/ISqlDataAccess.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLibrary.Core/bin/Debug/net6.0/BookLibrary.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/bin/Debug/net6.0/BookLibrary.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLibrary.Core/bin/Debug/net6.0/BookLibrary.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/bin/Debug/net6.0/BookLibrary.Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLibrary.Core/obj/BookLibrary.Core.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/BookLibrary.Core.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Core.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Core.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Core.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Core.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Core.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/BookLibrary.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/ref/BookLibrary.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/ref/BookLibrary.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/refint/BookLibrary.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/Debug/net6.0/refint/BookLibrary.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLibrary.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BookLibrary.Core/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -435,7 +347,7 @@
       <workItem from="1653952648979" duration="297000" />
       <workItem from="1653952999579" duration="1348000" />
       <workItem from="1653957078420" duration="1656000" />
-      <workItem from="1653960000168" duration="5382000" />
+      <workItem from="1653960000168" duration="9097000" />
     </task>
     <servers />
   </component>
@@ -463,39 +375,39 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BlazorApp.UI/Services/RepositoryService.cs</url>
-          <line>45</line>
+          <line>40</line>
           <properties documentPath="C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\Services\RepositoryService.cs" initialLine="40" containingFunctionPresentation="method 'GetAll'">
             <startOffsets>
-              <option value="1162" />
+              <option value="1033" />
             </startOffsets>
             <endOffsets>
-              <option value="1178" />
+              <option value="1049" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BlazorApp.UI/Services/RepositoryService.cs</url>
-          <line>43</line>
+          <line>38</line>
           <properties documentPath="C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\Services\RepositoryService.cs" initialLine="38" containingFunctionPresentation="method 'GetAll'">
             <startOffsets>
-              <option value="1087" />
+              <option value="958" />
             </startOffsets>
             <endOffsets>
-              <option value="1148" />
+              <option value="1019" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BlazorApp.UI/Services/RepositoryService.cs</url>
-          <line>40</line>
+          <line>35</line>
           <properties documentPath="C:\repo\imd\vladimirworld-BookCityLibrary\BlazorApp.UI\Services\RepositoryService.cs" initialLine="35" containingFunctionPresentation="method 'GetAll'">
             <startOffsets>
-              <option value="1051" />
+              <option value="922" />
             </startOffsets>
             <endOffsets>
-              <option value="1052" />
+              <option value="923" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="10" />

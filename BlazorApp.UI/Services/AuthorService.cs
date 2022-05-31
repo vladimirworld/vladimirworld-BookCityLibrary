@@ -1,5 +1,4 @@
-﻿using System.Net.Http;
-using BlazorApp.UI.Contracts;
+﻿using BlazorApp.UI.Contracts;
 using BlazorApp.UI.Models;
 
 namespace BlazorApp.UI.Services;

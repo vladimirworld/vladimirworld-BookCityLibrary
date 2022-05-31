@@ -2,20 +2,20 @@
 @using Blazored.Toast.Services
 @using Microsoft.AspNetCore.Components
 
-@inject IAuthorRepository _repo
-@inject NavigationManager _navManager
-@inject IToastService _toastService
+@inject IAuthorRepository Repo
+@inject NavigationManager NavManager
+@inject IToastService ToastService
 
 
-<h3>Update Current Author</h3>
+<h3>Обновление информации для автора</h3>
 
 @if (!_isSuccessful)
 {
-    <ErrorMessage Message="Error! Something went wrong with the current operation." />
+    <ErrorMessage Message="Ошибка! Что-то пошло не так..." />
 }
 else if (Model == null)
 {
-    <LoadingPrompt Message="Loading Author Data for Updating..." />
+    <LoadingPrompt Message="Загрузка данных для обновления..." />
 }
 else
 {
@@ -26,26 +26,26 @@ else
         <ValidationSummary />
         
         <div class="form-group">
-            <label for="firstName">First Name</label>
+            <label for="firstName">Имя</label>
             <InputText @bind-Value="@Model.FirstName" class="form-control" id="firstName" />
         </div>
         <div class="form-group">
-            <label for="lastName">Last Name</label>
+            <label for="lastName">Фамилия</label>
             <InputText @bind-Value="@Model.LastName" class="form-control" id="lastName" />
         </div>
         <div class="form-group">
-            <label for="bio">Biography</label>
+            <label for="bio">Биография</label>
             <InputTextArea @bind-Value="@Model.Bio" class="form-control" id="bio" />
         </div>
 
         <button class="btn btn-success" type="submit">
             <span class="oi oi-pencil"></span>
-            Submit Changes
+            Применить
         </button>
 
         <button @onclick="BackToList" class="btn btn-outline-secondary">
             <span class="oi oi-media-skip-backward"></span>
-            Back to List
+            Вернуться к списку
         </button>
     </EditForm>
 }
@@ -62,27 +62,27 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        Model = await _repo.GetSingle(Endpoints.AuthorsEndpoint, Id);
+        Model = await Repo.GetSingle(Endpoints.AuthorsEndpoint, Id);
     }
 
     private async Task UpdateAuthor()
     {
-        _isSuccessful = await _repo.Update(Endpoints.AuthorsEndpoint, Model, Model.Id);
+        _isSuccessful = await Repo.Update(Endpoints.AuthorsEndpoint, Model, Model.Id);
 
         if(_isSuccessful)
         {
-            _toastService.ShowSuccess($"Successfully Updated Author: {Model.FirstName} {Model.LastName}");
+            ToastService.ShowSuccess($"Информация успешно обновлена: {Model.FirstName} {Model.LastName}");
             BackToList();
         }
         else
         {
             _isSuccessful = false;
-            _toastService.ShowError("An error occurred while updating the record!");
+            ToastService.ShowError("Случилась ошибка!");
         }
     }
 
     public void BackToList()
     {
-        _navManager.NavigateTo("/authors/");
+        NavManager.NavigateTo("/authors/");
     }
 }

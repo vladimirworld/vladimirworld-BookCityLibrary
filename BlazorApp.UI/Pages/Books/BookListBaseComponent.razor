@@ -9,7 +9,7 @@
         <td>
             @if (book.Author == null)
             {
-                <span class="text-muted">No Author Recorded</span>
+                <span class="text-muted">Нет автора</span>
             }
             else
             {
@@ -22,15 +22,15 @@
         <td>
             <a href="/books/details/@book.Id" class="btn btn-primary">
                 <span class="oi oi-book"></span>
-                Details
+                Детали
             </a>
             <a href="/books/update/@book.Id" class="btn btn-warning">
                 <span class="oi oi-pencil"></span>
-                Update
+                Редактировать
             </a>
             <a href="/books/delete/@book.Id" class="btn btn-danger">
                 <span class="oi oi-delete"></span>
-                Delete
+                Удалить
             </a>
         </td>
     </tr>

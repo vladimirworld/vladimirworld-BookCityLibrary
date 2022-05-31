@@ -1,57 +1,57 @@
 ﻿@page "/authors/delete/{Id:int}"
 @using Blazored.Toast.Services
 
-@inject IAuthorRepository _repo
-@inject NavigationManager _navManager
-@inject IToastService _toastService
+@inject IAuthorRepository Repo
+@inject NavigationManager NavManager
+@inject IToastService ToastService
 
-<h3>Delete Author</h3>
+<h3>Удалить автора</h3>
 
 @if (!_isSuccessful)
 {
-    <ErrorMessage Message="Something Went Wrong With the Operation" />
+    <ErrorMessage Message="Что-то пошло не так!" />
 }
 
-@if (Id < 1 || string.IsNullOrWhiteSpace(Model.FirstName))
+@if (Id < 1 || string.IsNullOrWhiteSpace(_model.FirstName))
 {
-    <ErrorMessage Message="Invalid Selection. Please Try Again" />
+    <ErrorMessage Message="Ошибка! Попробуйте снова" />
 }
-else if (Model == null)
+else if (_model == null)
 {
-    <LoadingPrompt Message="Loading Author Details..." />
+    <LoadingPrompt Message="Загрузка данных..." />
 }
 else
 {
     <div class="col-md-4">
         <table class="table table-responsive">
             <tr>
-                <td>First Name</td>
-                <td>@Model.FirstName</td>
+                <td>Имя</td>
+                <td>@_model.FirstName</td>
             </tr>
             <tr>
-                <td>Last Name</td>
-                <td>@Model.LastName</td>
+                <td>Фамилия</td>
+                <td>@_model.LastName</td>
             </tr>
             <tr>
-                <td>Biography</td>
-                <td>@Model.Bio</td>
+                <td>Биография</td>
+                <td>@_model.Bio</td>
             </tr>
         </table>
         <br/>
-        @if (Model.Books == null || Model.Books.Count < 1)
+        @if (_model.Books == null || _model.Books.Count < 1)
         {
             <div class="alert alert-dismissible alert-secondary">
-                No Books for this Author
+                У этого автора пока не добавлено книг
             </div>
         }
         else
         {
             <div class="card" style="width: 18rem;">
                 <div class="card-header">
-                    <h4>Author's Books</h4>
+                    <h4>Книги автора</h4>
                 </div>
                 <ul class="list-group list-group-flush">
-                    @foreach (var book in Model.Books)
+                    @foreach (var book in _model.Books)
                     {
                         <li class="list-group-item">@book.Title - @book.Price </li>
                     }
@@ -65,44 +65,44 @@ else
 
 <button @onclick="DeleteAuthor" class="btn btn-danger">
     <span class="oi oi-delete"></span>
-    Delete Author
+    Удалить автора
 </button>
 
 <button @onclick="BackToList" class="btn btn-outline-secondary">
     <span class="oi oi-media-skip-backward"></span>
-    Back to List
+    Вернуться к списку
 </button>
 
 @code {
     [Parameter]
     public int Id { get; set; }
 
-    private Author Model = new Author();
+    private Author _model = new();
     
     private bool _isSuccessful = true;
 
     protected override async Task OnInitializedAsync()
     {
-        Model = await _repo.GetSingle(Endpoints.AuthorsEndpoint, Id);
+        _model = await Repo.GetSingle(Endpoints.AuthorsEndpoint, Id);
     }
 
     private async Task DeleteAuthor()
     {
-        _isSuccessful = await _repo.Delete(Endpoints.AuthorsEndpoint, Model.Id);
+        _isSuccessful = await Repo.Delete(Endpoints.AuthorsEndpoint, _model.Id);
 
         if (_isSuccessful)
         {
-            _toastService.ShowSuccess("Author Deleted Successfully");
+            ToastService.ShowSuccess("Автор успешно удалён!");
             BackToList();
         }
         else
         {
-            _toastService.ShowError("Error attempting record deletion");
+            ToastService.ShowError("Ошибка при удалении!");
         }
     }
 
     private void BackToList()
     {
-        _navManager.NavigateTo("/authors/");
+        NavManager.NavigateTo("/authors/");
     }
 }

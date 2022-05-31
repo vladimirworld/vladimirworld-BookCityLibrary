@@ -1,14 +1,14 @@
 ﻿@page "/books"
 
-@inject IBookRepository _repo
+@inject IBookRepository Repo
 
-<h3>Book List</h3>
+<h3>Список книг</h3>
 
 <hr />
 
 <a href="/books/create/" class="btn btn-primary p-2 m-2">
     <span class="oi oi-pencil"></span>
-    Add A Book
+    Добавить книгу
 </a>
 
 <SearchComponent OnSearch="HandleSearch" />
@@ -17,19 +17,19 @@
 
 @if (books == null)
 {
-    <LoadingPrompt Message="Loading Book list" />
+    <LoadingPrompt Message="Загрузка списка с книгами" />
 }
 else
 {
     <table class="table table-striped">
         <thead class="thead-dark">
             <tr>
-                <th scope="col">Title</th>
-                <th scope="col">Year</th>
-                <th scope="col">Price</th>
+                <th scope="col">Название</th>
+                <th scope="col">Год</th>
+                <th scope="col">Цена</th>
                 <th scope="col">ISBN</th>
-                <th scope="col">Author</th>
-                <th scope="col">Actions</th>
+                <th scope="col">Автора</th>
+                <th scope="col">Действия</th>
             </tr>
         </thead>
         <tbody>
@@ -43,7 +43,7 @@ else
             else
             {
                 <tr>
-                    <td colspan="3">Cannot find any books</td>
+                    <td colspan="3">Не можем найти книгу</td>
                 </tr>
             }
         </tbody>
@@ -56,11 +56,11 @@ else
     protected override async Task OnInitializedAsync()
     {
         await base.OnInitializedAsync();
-        books = await _repo.GetAll(Endpoints.BooksEndpoint);
+        books = await Repo.GetAll(Endpoints.BooksEndpoint);
     }
 
     private async Task HandleSearch(string search)
     {
-        books = await _repo.GetBySearch(Endpoints.BooksEndpoint, search);
+        books = await Repo.GetBySearch(Endpoints.BooksEndpoint, search);
     }
 }

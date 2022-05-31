@@ -2,16 +2,16 @@
 @using Blazored.Toast.Services
 @using Microsoft.AspNetCore.Components
 
-@inject IBookRepository _repo
-@inject IAuthorRepository _authorRepo
-@inject NavigationManager _navManager
-@inject IToastService _toastService
+@inject IBookRepository Repo
+@inject IAuthorRepository AuthorRepo
+@inject NavigationManager NavManager
+@inject IToastService ToastService
 
 
-<h3>Update Book</h3>
+<h3>Редактировать инфо по книге</h3>
 @if (_model == null)
 {
-    <LoadingPrompt Message="Loading Book details..." />
+    <LoadingPrompt Message="Загрузка данных по книге..." />
 }
 else
 {
@@ -23,7 +23,7 @@ else
         <ValidationSummary />
 
         <div class="form-group">
-            <label for="title">Title</label>
+            <label for="title">Название</label>
             <InputText @bind-Value="@_model.Title" class="form-control" id="title" />
         </div>
 
@@ -33,19 +33,19 @@ else
         </div>
 
         <div class="form-group">
-            <label for="price">Price</label>
+            <label for="price">Цена</label>
             <InputNumber @bind-Value="@_model.Price" class="form-control" id="price" />
         </div>
 
         <div class="form-group">
-            <label for="year">Year</label>
+            <label for="year">Год</label>
             <InputNumber @bind-Value="@_model.Year" class="form-control" id="year" />
         </div>
 
         <div class="form-group">
-            <label for="author">Authors</label>
+            <label for="author">Авторы</label>
             <select @bind="@_model.AuthorId" class="form-control" id="author">
-                <option value="">-- Select Author --</option>
+                <option value="">-- Выбрать автора --</option>
                 @if (_authors != null)
                 {
                     foreach (var author in _authors)
@@ -57,35 +57,18 @@ else
         </div>
 
         <div class="form-group">
-            <label for="summary">Summary</label>
+            <label for="summary">Общее</label>
             <InputTextArea @bind-Value="@_model.Summary" class="form-control" id="summary" />
         </div>
 
-        @*     <div class="form-group"> *@
-        @*         <label for="bookcover">Book Cover Photo</label> *@
-        @*         <InputFile OnChange="HandleFileSelection"/> *@
-        @*         @if (isInvalidFileType) *@
-        @*         { *@
-        @*             <ErrorMessage Message="Please remove the invalid file type and select as new image, or leave this field blank"/> *@
-        @*         } *@
-        @*         @if (!string.IsNullOrWhiteSpace(imageDataURL)) *@
-        @*         { *@
-        @*             <img src="@imageDataURL" style="height:100px;width:100px"/> *@
-        @*         } *@
-        @*         else if (!string.IsNullOrWhiteSpace(Model.Image)) *@
-        @*         { *@
-        @*             <img src="@string.Format("data:image/png;base64,{0}", Model.File)" style="height:100px;width:100px"/> *@
-        @*         } *@
-        @*     </div> *@
-
         <button class="btn btn-success" type="submit">
             <span class="oi oi-pencil"></span>
-            Submit Changes
+            Применить
         </button>
 
         <button @onclick="BackToList" class="btn btn-outline-secondary">
             <span class="oi oi-media-skip-backward"></span>
-            Back to List
+            Вернуться к списку
         </button>
     </EditForm>
 }
@@ -94,43 +77,36 @@ else
     [Parameter]
     public int Id { get; set; }
 
-    private Book _model = new Book();
+    private Book _model = new();
     private IList<Author> _authors;
 
     private bool _isSuccessful = true;
 
     protected override async Task OnInitializedAsync()
     {
-        _model = await _repo.GetSingle(Endpoints.BooksEndpoint, Id);
-        _authors = await _authorRepo.GetAll(Endpoints.AuthorsEndpoint);
+        _model = await Repo.GetSingle(Endpoints.BooksEndpoint, Id);
+        _authors = await AuthorRepo.GetAll(Endpoints.AuthorsEndpoint);
     }
 
     private async Task UpdateBook()
     {
         bool _isSuccessful;
-
-        try
-        {
-            _isSuccessful = await _repo.Update(Endpoints.BooksEndpoint, _model, _model.Id);
-        }
-        catch (Exception)
-        {
-            throw;
-        }
-
+        
+        _isSuccessful = await Repo.Update(Endpoints.BooksEndpoint, _model, _model.Id);
+        
         if (_isSuccessful)
         {
-            _toastService.ShowSuccess($"Successfully Updated Book Record: {_model.Id} {_model.Title}");
+            ToastService.ShowSuccess($"Успешно добавлена новая книга: {_model.Id} {_model.Title}");
             BackToList();
         }
         else
         {
-            _toastService.ShowError("An error occurred while updating the record!");
+            ToastService.ShowError("Произошла ошибка!");
         }
     }
 
     private void BackToList()
     {
-        _navManager.NavigateTo("/books");
+        NavManager.NavigateTo("/books");
     }
 }

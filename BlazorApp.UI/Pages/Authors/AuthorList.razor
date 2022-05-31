@@ -1,14 +1,14 @@
 ﻿@page "/authors"
 
-@inject IAuthorRepository _repo
+@inject IAuthorRepository Repo
 
-<h3>Authors List</h3>
+<h3>Список авторов</h3>
 
 <hr />
 
 <a href="/authors/create/" class="btn btn-primary p-2 m-2">
     <span class="oi oi-pencil"></span>
-    Add An Author
+    Добавить автора
 </a>
 
 <SearchComponent OnSearch="HandleSearch" />
@@ -17,16 +17,16 @@
 
 @if (authors == null)
 {
-    <LoadingPrompt Message="Loading Author list..." />
+    <LoadingPrompt Message="Загрузка списка..." />
 }
 else
 {
     <table class="table table-striped">
         <thead class="thead-dark">
             <tr>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Actions</th>
+                <th scope="col">Имя</th>
+                <th scope="col">Фамилия</th>
+                <th scope="col">Действия</th>
             </tr>
         </thead>
         <tbody>
@@ -39,7 +39,7 @@ else
             else
             {
                 <tr>
-                    <td colspan="3">Cannot find any authors</td>
+                    <td colspan="3">Не удаётся найти авторов</td>
                 </tr>
             }
 
@@ -53,12 +53,12 @@ else
     protected override async Task OnInitializedAsync()
     {
         await base.OnInitializedAsync();
-        authors = await _repo.GetAll(Endpoints.AuthorsEndpoint);
+        authors = await Repo.GetAll(Endpoints.AuthorsEndpoint);
         StateHasChanged();
     }
 
     private async Task HandleSearch(string search)
     {
-        authors = await _repo.GetBySearch(Endpoints.AuthorsEndpoint, search);
+        authors = await Repo.GetBySearch(Endpoints.AuthorsEndpoint, search);
     }
 }

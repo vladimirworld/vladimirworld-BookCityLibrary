@@ -38,7 +38,7 @@ public class AuthorSqlRepository : IAuthorRepository
 
     public async Task<bool> Delete(Author entity)
     {
-        const string sql = "DELETE FROM Authors WHERE Id = @Id";
+        const string sql = "PRAGMA foreign_keys = OFF; DELETE FROM Authors WHERE Id = @Id";
 
         try
         {
